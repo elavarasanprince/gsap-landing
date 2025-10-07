@@ -29,30 +29,11 @@ const TestimonialSection = () => {
       id: 3,
       name: "Emily Watson",
       role: "Startup Founder",
-      content: "As a technical founder, I struggled with content creation. Rethoric made it effortless and the results speak for themselves.",
+      content: "Working with Lev and the team @Rethoric was a rewarding experience. They are true professionals: always delivering on time and incredibly knowledgeable about organic content marketing. They helped me build my offer and guided me on strategic decisions about implementation and my personal brand. I am glad to have Rethoric in my corner.",
       avatar: "👩‍🔬"
     },
-    {
-      id: 4,
-      name: "David Kim",
-      role: "Co-founder, SaaSPro",
-      content: "The engagement strategy brought us 3 enterprise clients in the first month. ROI was immediate and substantial.",
-      avatar: "👨‍💻"
-    },
-    {
-      id: 5,
-      name: "Lisa Thompson",
-      role: "CEO, HealthTech",
-      content: "Our content now resonates with our target audience. The team understands our voice and delivers consistent quality.",
-      avatar: "👩‍⚕️"
-    },
-    {
-      id: 6,
-      name: "Alex Morgan",
-      role: "Founder, FinTech Inc",
-      content: "From zero to industry influencer in 90 days. The strategic approach to content changed everything for our business.",
-      avatar: "👨‍🎓"
-    }
+    
+
   ];
 
   // Add card to ref array
@@ -65,29 +46,18 @@ const TestimonialSection = () => {
   useEffect(() => {
     const cards = cardsRef.current;
     
-    // Animate cards from right to left when section comes into view
-    gsap.fromTo(cards, 
-      {
-        x: 100,
-        opacity: 0,
-        rotationY: 15
-      },
-      {
-        x: 0,
-        opacity: 1,
-        rotationY: 0,
-        stagger: 0.2,
-        duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play none none reverse"
-        }
-      }
-    );
-
+    let scrollMoveLeft2 = document.querySelectorAll(".scroll-move-left2");
+    scrollMoveLeft2.forEach((scrollMoveLeft2) => {
+        gsap.to(scrollMoveLeft2, {
+            x: 100,
+            duration: 1.5,
+            scrollTrigger: {
+                trigger: scrollMoveLeft2,
+                start: "top 100%",
+                scrub: 2
+            }
+        });
+    });
     // Clean up
     return () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
@@ -96,22 +66,22 @@ const TestimonialSection = () => {
 
   return (
     <section ref={sectionRef} className="testimonial-section">
-      <div className="container">
+      <div className="container-fluid">
         <div className="text-center mb-5">
           <h2 className="section-title">What Founders Say</h2>
           <p className="section-subtitle">Join hundreds of founders who transformed their LinkedIn presence</p>
         </div>
 
-        <div className="testimonial-cards-container">
-          <div className="testimonial-cards-track">
+        <div className="row">
+         
             {testimonials.map((testimonial, index) => (
               <div
                 key={testimonial.id}
                 ref={addToRefs}
-                className="testimonial-card"
+                className="col-lg-4"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="testimonial-content">
+                <div className="testimonial-content scroll-move-left2 card h-100 border-0">
                   <div className="testimonial-avatar">
                     {testimonial.avatar}
                   </div>
@@ -123,7 +93,7 @@ const TestimonialSection = () => {
                 </div>
               </div>
             ))}
-          </div>
+          
         </div>
       </div>
     </section>

@@ -204,7 +204,7 @@ font-family: "Inter", sans-serif;
 text-align: center;
 font-size: 2.5rem;
 font-weight: 700;
-margin-bottom: 50px;
+/* margin-bottom: 50px; */
 }
 
 .faq-container {
@@ -402,4 +402,17 @@ inset: 0% 0% 0% auto;
   color:#272727;
   font-size: 1.4rem;
   font-weight: 500;
+}
+.card-text{
+  font-size: 1.3rem;
+}
+.testimonial-content {
+
+  background-color: #f6f6f6 !important; 
+  border-radius: .4rem;
+  padding: 2rem;
+
+}
+.testimonial-text{
+  font-size: 1rem;
 }

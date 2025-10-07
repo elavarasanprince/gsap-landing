@@ -6,6 +6,7 @@ import FAQSection from "../components/FAQ";
 import Benefits from "../components/Benefits";
 import TestimonialSection from "../components/Tetimonials";
 import LogoSlider from "../components/Client";
+import Example from "../components/Example";
 
 export default function HomePage() {
   useEffect(() => {
@@ -19,6 +20,7 @@ export default function HomePage() {
 <LogoSlider/>
       <HowItWorks />
       <Benefits />
+      <Example />
       <TestimonialSection />
       <FAQSection />
      
