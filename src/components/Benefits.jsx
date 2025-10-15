@@ -13,7 +13,7 @@ export default function Benefits() {
   return (
     <section className="benefits py-5 text-center">
       <div className="container">
-        <h2 className="section-title">Benefits of Founder-Led Content</h2>
+        <h2 className="section-title mb-5">Benefits of Founder-Led Content</h2>
         <div className="row g-5">
           {benefits.map((b, i) => (
             <div className="col-md-4" key={i}>

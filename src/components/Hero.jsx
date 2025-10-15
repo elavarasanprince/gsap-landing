@@ -16,16 +16,16 @@ const HeroSection = () => {
               className="display-4 fw-bold mb-4"
               style={{ lineHeight: '1.2' }}
             >
-              LinkedIn content for<br />
-              <span style={{ color: '#0077b5' }}>founders</span>
+              LinkedIn Content for<br />
+              <span style={{ color: '#0077b5' }}>Founders</span>
             </h1>
             <p 
-              className="lead mb-4 fs-5 text-muted"
-              style={{ maxWidth: '600px', margin: '0 auto' }}
+              className="lead fw-normal mb-4 fs-5 text-muted"
+            
             >
               We help founders post content that gets millions of monthly impressions
             </p>
-            <p className="mb-4 ">
+            <p className="mb-4 spl-text fs-6">
               Backed by <span style={{ color: '#ff6600'}}>Y Combinator</span>
             </p>
             <button 

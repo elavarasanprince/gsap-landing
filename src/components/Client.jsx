@@ -1,18 +1,19 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
+import logoss from '../assets/images/logoss.png';
 
 
 const LogoSlider = () => {
   const sliderTrackRef = useRef(null);
 
   const logos = [
-    { id: 1, src: "./src/assets/images/logoss.png", alt: "ClickUp" },
-    { id: 2, src: "./src/assets/images/logoss.png", alt: "Checkr" },
-    { id: 3, src: "./src/assets/images/logoss.png", alt: "Spring" },
-    { id: 4, src: "./src/assets/images/logoss.png", alt: "Café" },
-    { id: 5, src: "./src/assets/images/logoss.png", alt: "Nolte" },
-    { id: 6, src: "./src/assets/images/logoss.png", alt: "Vooma" },
-    { id: 7, src: "./src/assets/images/logoss.png", alt: "Growwrk" }
+    { id: 1, src:logoss, alt: "ClickUp" },
+    { id: 2, src:logoss, alt: "Checkr" },
+    { id: 3, src: logoss, alt: "Spring" },
+    { id: 4, src: logoss, alt: "Café" },
+    { id: 5, src: logoss, alt: "Nolte" },
+    { id: 6, src: logoss, alt: "Vooma" },
+    { id: 7, src: logoss, alt: "Growwrk" }
   ];
 
   useEffect(() => {
@@ -36,7 +37,7 @@ const LogoSlider = () => {
     <section className="logo-slider">
       <div className="container-fluid hero-home">
 <div className="text-center mb-5">
-<p class="text-block-13">Trusted by...</p>
+<p className="text-block-13">Trusted by...</p>
 </div>
       
 

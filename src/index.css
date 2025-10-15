@@ -416,3 +416,20 @@ inset: 0% 0% 0% auto;
 .testimonial-text{
   font-size: 1rem;
 }
+
+.blog-card {
+  transform: translateY(0);
+  transition: all 0.4s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  line-height: 1.4;
+}
+/* .spl-text{
+  font-size: 12px !important;
+} */

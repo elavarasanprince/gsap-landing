@@ -74,7 +74,7 @@ const FAQSection = () => {
   return (
     <section className="faq-section">
       <div className="container">
-        <h2 className="section-title">Frequently Asked Questions</h2>
+        <h2 className="section-title mb-5">Frequently Asked Questions</h2>
         <div className="row">
           {/* Left Column */}
           <div className="col-lg-6">

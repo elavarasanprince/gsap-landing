@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from './components/Layout';
 import HomePage from "./pages/HomePage";
+import BlogSection from "./pages/Blog";
+import FreeTool from "./pages/FreeTool";
 
 function Home() {
   return <h2 className="text-center mt-5">Welcome to R|ethoric</h2>;
@@ -28,7 +30,7 @@ function Blog() {
 export default function App() {
   return (
     
-    <Router>
+  
       <Layout>
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -36,10 +38,10 @@ export default function App() {
         <Route path="/examples" element={<Examples />} />
         <Route path="/benefits" element={<Benefits />} />
         <Route path="/faq" element={<FAQ />} />
-        <Route path="/tools" element={<Tools />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/tools" element={<FreeTool />} />
+        <Route path="/blog" element={<BlogSection/>} />
       </Routes>
       </Layout>
-    </Router>
+   
   );
 }

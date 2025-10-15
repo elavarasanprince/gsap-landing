@@ -1,14 +1,15 @@
 import React from 'react'
+import eampimg from '../assets/images/exampleimg.jpg'
 
 const exmpimg = [
-    {id:1, src:"./src/assets/images/exampleimg.jpg", alt:"Exmple Image"},
-    {id:2, src:"./src/assets/images/exampleimg.jpg", alt:"Exmple Image"},
-    {id:3, src:"./src/assets/images/exampleimg.jpg", alt:"Exmple Image"},
-    {id:4, src:"./src/assets/images/exampleimg.jpg", alt:"Exmple Image"},
-    {id:5, src:"./src/assets/images/exampleimg.jpg", alt:"Exmple Image"},
-    {id:6, src:"./src/assets/images/exampleimg.jpg", alt:"Exmple Image"},
-    {id:7, src:"./src/assets/images/exampleimg.jpg", alt:"Exmple Image"},
-    {id:8, src:"./src/assets/images/exampleimg.jpg", alt:"Exmple Image"}
+    {id:1, src:eampimg, alt:"Exmple Image"},
+    {id:2, src:eampimg, alt:"Exmple Image"},
+    {id:3, src:eampimg, alt:"Exmple Image"},
+    {id:4, src:eampimg, alt:"Exmple Image"},
+    {id:5, src:eampimg, alt:"Exmple Image"},
+    {id:6, src:eampimg, alt:"Exmple Image"},
+    {id:7, src:eampimg, alt:"Exmple Image"},
+    {id:8, src:eampimg, alt:"Exmple Image"}
 ]
 
 function Example() {
@@ -25,7 +26,7 @@ function Example() {
            
                 { 
                 exmpimg.map(eximg=>(
-                    <div className="col-lg-3">
+                    <div className="col-lg-3" key={eximg.id}>
 
                     <div className="exmp-img mb-4">
                     <img className='img-fluid' src={eximg.src} alt={eximg.alt} />
