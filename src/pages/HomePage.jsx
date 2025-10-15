@@ -4,7 +4,7 @@ import { initAnimations, initFAQToggle } from "../scripts/animations"; // ✅ co
 import HowItWorks from "../components/HowItWorks";
 import FAQSection from "../components/FAQ";
 import Benefits from "../components/Benefits";
-import TestimonialSection from "../components/Tetimonials";
+import TestimonialSection from "../components/TestimonialNew";
 import LogoSlider from "../components/Client";
 import Example from "../components/Example";
 

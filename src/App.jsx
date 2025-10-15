@@ -4,6 +4,8 @@ import Layout from './components/Layout';
 import HomePage from "./pages/HomePage";
 import BlogSection from "./pages/Blog";
 import FreeTool from "./pages/FreeTool";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 function Home() {
   return <h2 className="text-center mt-5">Welcome to R|ethoric</h2>;
@@ -32,6 +34,7 @@ export default function App() {
     
   
       <Layout>
+         <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/how-it-works" element={<HowItWorks />} />
