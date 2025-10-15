@@ -25,7 +25,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className="col-md-6 footer-bottom text-md-end text-muted">
-          Copyright © 2025 Rethoric. All rights reserved.
+          Copyright © 2025 TechoVirish. All rights reserved.
         </div>
       </div>
     </footer>
