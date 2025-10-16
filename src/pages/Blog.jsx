@@ -37,7 +37,7 @@ export default function BlogSection() {
     <section className="blog-section py-5">
       <div className="container">
       <div className="text-center mb-5">
-        <span className="text-primary fw-semibold">Blog</span>
+        <span className="text-primary fw-semibold">Blogs</span>
         <h2 className="section-title">Everything about <br /> LinkedIn growth</h2>
         
         <p>The latest news, tips, and how-to's to help founders grow on LinkedIn.</p>
