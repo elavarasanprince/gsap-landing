@@ -9,7 +9,7 @@ createRoot(document.getElementById('root')).render(
 
   <StrictMode>
 
-      <BrowserRouter basename="/tvland">
+      <BrowserRouter>
        <App />
       </BrowserRouter>
 
