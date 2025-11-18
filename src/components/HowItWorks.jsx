@@ -4,23 +4,23 @@ const HowItWorks = () => {
   const steps = [
     {
       number: "Step 1",
-      title: "Join an Interview Session",
-      description: "We extract your insights, lessons, experiences, and stories into optimized LinkedIn content."
+      title: "Get on a discovery session",
+      description: "Our expert gets in on a virtual meeting with you to get your stories, understand your experience and expertise so we can get the right writer onboard to craft perfectly optimised posts / scripts for you."
     },
     {
       number: "Step 2", 
-      title: "Approve Content Batches",
-      description: "World-class human writers & editors create all your content. You receive content batches for I-click approval & unlimited revisions."
+      title: "Content approval and tone correction",
+      description: "The created posts / scripts that are created by writers will be sent to you for approval and tone correction will be done in a virtual meeting."
     },
     {
       number: "Step 3",
-      title: "Real-Time Collaboration on Slack", 
-      description: "Always available via Slack for instant communication. Whether it's sharing ideas or brainstorming sessions, we work like a full-time member of your team."
+      title: "Real time collaboration", 
+      description: "We collaborate real time over email / slack / whatsapp to keep the communication going considering your busy schedule. "
     },
     {
       number: "Step 4",
-      title: "Daily Strategic Engagement & Outreach",
-      description: "We will engage daily with relevant posts to boost your content distribution and strategically grow your audience with non-sale ✅️ ch."
+      title: "Save time",
+      description: "We don’t solve the content problem, we solve your time problem for content. You are the expert at what you do. We are here to help you save time. While you build your business, we build your personal brand."
     }
   ];
 

@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 export default function Navbar() {
   const location = useLocation();
 
@@ -13,7 +14,8 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light shadow-sm sticky-top">
     <div className="container">
       <Link className="navbar-brand fw-bold fs-3" to="/">
-        R|ethoric.
+      <img src="/images/logo.PNG" alt="Logo" style={{width:"80px"}} />
+
       </Link>
 
       <button

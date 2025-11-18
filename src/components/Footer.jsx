@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <>
      <section className="join-section container d-flex flex-column flex-lg-row justify-content-between align-items-center">
-    <h2 className="mb-4 mb-lg-0">Join Rethoric</h2>
-    <button className=" btn-black">Book intro call</button>
+    <h2 className="mb-4 mb-lg-0">Work with us </h2>
+    <button className=" btn-black">Book a call</button>
   </section>
     <footer className="container py-4 mt-5">
       <div className="row align-items-center">
@@ -25,7 +25,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className="col-md-6 footer-bottom text-md-end text-muted">
-          Copyright © 2025 Techovirish. All rights reserved.
+          Copyright © 2025 TSC. All rights reserved. Website Designed By <a href="https://techovirish.com/" target="_blank" rel="noopener noreferrer">TechoVirish</a>
         </div>
       </div>
     </footer>

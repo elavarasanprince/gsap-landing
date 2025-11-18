@@ -9,14 +9,42 @@ import "swiper/css/navigation";
 const testimonials = [
   {
     message:
-      "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime place at facere possimus, omnis voluptas assumenda est, omnis dolor repellendus!Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime place at facere possimus, omnis voluptas assumenda est, omnis dolor repellendus!",
-    name: "Sarah Thompson",
+      "Sudhar is a maverick, a rare mix of being a good samaritan and a kind businessman who empowers many directly and indirectly to be happy and successful.",
+    name: "VivianGomes",
+    role: "Co-founder at HFR&D",
   },
   {
     message:
-      "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime place at facere possimus, omnis voluptas assumenda est, omnis dolor repellendus!",
-    name: "Michael Smith",
+      "I have saved Sudhar’s number as Mr.Linkedin in my phone. He is someone who inspired me to take my personal brand seriously.",
+    name: "architectssr",
+    role: "founder at finteriors and dehub for architects",
   },
+ 
+{
+  message:
+  "Whenever I want the best, I partner with the best. Partnering with Sudharsanan Ganapathy for my personal branding has made a significant difference.",
+name: "ck kumaravel",
+role: "Co-founder and CEO, Naturals Salons",
+},
+{
+  message:
+  "Sudharsanan is easily the best personal branding strategist in the country. His depth of knowledge towards business and content strategy is amazing.",
+name: "ThangavelPuhal",
+role: "CEO at DigiNadu",
+},
+{
+  message:
+  "Sudharsanan’s people skills, consistency and strategic thinking are things I admire about him. My personal brand got a drastic improvement because of him.",
+name: "Nandhinipriya",
+role: "Founder and CEO, Aarah Herbals",
+},
+{
+  message:
+  "When I started my new journey of Business Transformation Coach, I approached Sudharsanan for my personal branding. I had an excellent experience working with him and his team. He is just brilliant.",
+name: "MalayDamania",
+role: "Author and Business Transformation Coach",
+},
+
 ];
 
 const TestimonialSection = () => {
@@ -67,7 +95,7 @@ const TestimonialSection = () => {
                   <div className="testimonial-two-info testimonial-three">
                     <p>“{item.message}”</p>
                     <span className="designation text_black d-flex align-items-center gap-3 mt-4">
-                      <svg
+                      {/* <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="50"
                         height="2"
@@ -75,9 +103,10 @@ const TestimonialSection = () => {
                         fill="none"
                       >
                         <path d="M0 1H50" stroke="currentColor" />
-                      </svg>
+                      </svg> */}
                       {item.name}
                     </span>
+                    <span className="text-muted">{item.role}</span>
                   </div>
                 </SwiperSlide>
               ))}

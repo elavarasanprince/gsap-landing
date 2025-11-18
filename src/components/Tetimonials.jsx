@@ -13,9 +13,9 @@ const TestimonialSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Chen",
-      role: "CEO, TechStart",
-      content: "Rethoric transformed our LinkedIn presence. We went from 500 to 50,000 followers in 6 months and generated over 200 qualified leads.",
+      name: "VivianGomes",
+      role: "Co-founder at HFR&D",
+      content: "Sudhar is a maverick, a rare mix of being a good samaritan and a kind businessman who empowers many directly and indirectly to be happy and successful.",
       avatar: "👩‍💼"
     },
     {

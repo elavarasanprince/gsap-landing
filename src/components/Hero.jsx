@@ -16,17 +16,20 @@ const HeroSection = () => {
               className="display-4 fw-bold mb-4"
               style={{ lineHeight: '1.2' }}
             >
-              LinkedIn Content for<br />
-              <span style={{ color: '#0077b5' }}>Founders</span>
+              Personal Branding for Business Owners
+{/* <br /> */}
+              <span style={{ color: '#0077b5' }}></span>
             </h1>
             <p 
               className="lead fw-normal mb-4 fs-5 text-muted"
             
             >
-              We help founders post content that gets millions of monthly impressions
+             We help business owners and C-suite executives
+
             </p>
             <p className="mb-4 spl-text fs-6">
-              Backed by <span style={{ color: '#ff6600'}}>Y Combinator</span>
+            <span style={{ color: '#ff6600'}}> 400 million impressions and counting
+</span>
             </p>
             <button 
               className="btn btn-dark btn-lg px-5 py-3 fw-semibold"
@@ -44,7 +47,8 @@ const HeroSection = () => {
                 e.target.style.boxShadow = 'none';
               }}
             >
-              Book intro call
+              Book a call
+
             </button>
           </div>
         </div>
